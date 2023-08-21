@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <style>
+        body {
+            background-image: url("static/{{ background }}");
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome, {{ username }}!</h1>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".json, .jpg, .jpeg, .png, .mp4" required>
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>
